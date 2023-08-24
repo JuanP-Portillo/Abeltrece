@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: "pages#home"
+  post "contact-email", to: "pages#contact_email", as: "contact_email"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

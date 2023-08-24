@@ -1,12 +1,27 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+body {
+  line-height: 1.1; /* Adjust to your preferred line height */
+
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+#mainNav {
+  font-family: "Cabin","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  background-color: #000000;
+  opacity: 1.0;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+#mainNav.transparent {
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+}
+
+.button {
+  border-radius: 1px;
+  background-color: rbg(0, 0, 0, 0) ;
+  outline: 2px solid white !important;
+  padding: 5px;
+  color: white !important;
 }

@@ -1,2 +1,117 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<nav id="mainNav" class="navbar navbar-expand-md fixed-top navbar-light">
+    <div class="container"><button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+        <div id="navbarResponsive" class="collapse navbar-collapse">
+            <h1>Abeltrece</h1>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item nav-link"><a style="color: rgb(255, 255, 255);" class="nav-link" href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="about" class="text-center content-section">
+    <div class="container-fluid d-flex justify-content-center align-items-center align-content-center video-parallax-container" style="background-color: rgba(0, 0, 0, 0);">
+        <div class="col-6 mt-5 p-5">
+            <h3><em><span style="color: rgb(255, 255, 255); font-size: 15px;">WEDDING VIDEOGRAPHY</span></em></h3>
+            <p><br /><em><span style="color: rgb(255, 255, 255); font-size: 10px; ">AS A DEDICATED AND PASSIONATE WEDDING VIDEOGRAPHER, MY AIM IS TO CAPTURE THE TRUE ESSENCE OF YOUR LOVE AND CREATE A STUNNING VISUAL MASTERPIECE THAT BRINGS YOUR WEDDING DAY TO LIFE. WITH A KEEN EYE FOR DETAIL, TECHNICAL EXPERTISE, AND AN ARTISTIC APPROACH, I AM COMMITTED TO DELIVERING A WEDDING VIDEO THAT SURPASSES YOUR EXPECTATIONS AND BECOMES A CHERISHED KEEPSAKE FOR YEARS TO COME. LET ME TELL YOUR UNIQUE LOVE STORY THROUGH THE MAGIC OF VIDEOGRAPHY, ENSURING THAT EVERY MOMENT IS BEAUTIFULLY PRESERVED AND CHERISHED FOREVER.</span></em></p>
+        </div>
+    </div>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0);">
+      <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 15px;">About US</span></h2>
+                <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">Abel Trece Films is a vibrant and dynamic independent wedding videography business located in Mexico City. With a relentless passion for our craft, we specialize in crafting exquisite cinematic wedding videos that capture the essence of love and create lasting memories.</span></p>
+                <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">At Abel Trece Films, our dedicated team of talented professionals takes great pride in their ability to weave together the most captivating moments of a couple&#39;s special day. With an artistic approach, we artfully capture the emotions, joy, and intimate details that make each wedding unique.</span></p>
+                <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">Recognizing that every couple has their own story, Abel Trece Films takes the time to understand our clients&#39; vision and desires. We strive to create a personalized experience, tailoring each wedding video to reflect the couple&#39;s style, personality, and individual love story. The result is a breathtakingly beautiful and emotionally captivating film that transports viewers back to the magic of the wedding day.</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" style="background-color: rgba(0, 0, 0, 1);"class="text-center content-section mt-5 p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 offset-lg-1 mx-auto">
+              <h2></h2>
+              <p><span style="color: rgb(255, 255, 255);">Your journey begins here</span></p>
+              <ul class="list-inline banner-social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/films.abeltrece/" target="_blank" class="button" role="button">
+                    <i class="fa fa-instagram fa-fw"></i><span class="network-name"> INSTAGRAM </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list-inline banner-social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://vimeo.com/abeltrece" target="_blank" class="button" role="button">
+                    <i class="fa fa-vimeo fa-fw"></i><span class="network-name"> VIMEO</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+                <section class="td-form">
+                    <div class="row td-form-wrapper">
+                        <div class="col-lg-11 td-glass">
+                          <%= form_with url: :contact_email, method: :post do |f| %>
+                          <%= f.text_field :name, placeholder: "enter you mf name" %>
+                          <% end %>
+                            <!-- <form class="td-form-wrapper">
+                                <h1 class="text-center"><em><span style="color: rgb(255, 255, 255);" font-weight: normal !important;">let&#39;s meet</span></em></h1>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="name">Name *</label>
+                                        <div class="d-flex"><i class="icon ion-person align-self-center"></i><input class="form-control d-flex" type="text" autocomplete="off" name="name" required placeholder="Abel Lopez" /></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="email">Email *</label>
+                                        <div class="d-flex"><i class="icon ion-ios-email align-self-center"></i><input class="form-control" type="text" autocomplete="off" name="phone" required placeholder="abel@lopez.com" inputmode="email" /></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="phone">Phone (optional)</label>
+                                        <div class="d-flex td-input-container"><i class="icon ion-ios-telephone align-self-center"></i><input class="form-control" type="text" autocomplete="off" placeholder="123-456-7890" name="phone" inputmode="tel" /></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12">
+                                        <div class="d-flex td-input-container"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255)"; class="form-label" for="message">Message Details *</label>
+                                        <div class="d-flex td-input-container"><i class="icon ion-android-create align-self-center"></i><textarea class="form-control" placeholder="Tell us about your wedding vision" name="message" rows="6" cols="50"></textarea></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="col-md-12"><button class="btn btn-dark float-end" type="submit">Send</button></div>
+                                </div>
+                            </form> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="map-clean"></div>
+<footer style="background-color: black;">
+    <div style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.2);" class="container text-center">
+        <p>Copyright ©AbelTrece 2023</p>
+    </div>
+</footer>
+<script>
+  // Get the navbar element
+  const navbar = document.querySelector('.navbar');
+
+  // Function to toggle transparency based on scroll position
+  function toggleNavbarTransparency() {
+    if (window.scrollY > 0) {
+      navbar.classList.add('transparent');
+    } else {
+      navbar.classList.remove('transparent');
+    }
+  }
+
+  // Listen for the scroll event and call the toggle function
+  window.addEventListener('scroll', toggleNavbarTransparency);
+</script>
