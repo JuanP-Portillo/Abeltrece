@@ -30,20 +30,19 @@
 <section id="contact" style="background-color: rgba(0, 0, 0, 1);"class="text-center content-section mt-5 p-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-6 offset-lg-1 mx-auto">
-              <h2></h2>
-              <p><span style="color: rgb(255, 255, 255);">Your journey begins here</span></p>
+            <div class="col-md-6 col-lg-6 mt-5 offset-lg-1 mx-auto">
+              <p><span style="color: rgb(255, 255, 255);"><strong>Your journey begins here</strong></span></p>
               <ul class="list-inline banner-social-buttons">
                 <li class="list-inline-item">
                   <a href="https://www.instagram.com/films.abeltrece/" target="_blank" class="button" role="button">
-                    <i class="fa fa-instagram fa-fw"></i><span class="network-name"> INSTAGRAM </span>
+                    <i class="fa-brands fa-instagram"></i><span class="network-name helvetica-light"> INSTAGRAM </span>
                   </a>
                 </li>
               </ul>
               <ul class="list-inline banner-social-buttons">
                 <li class="list-inline-item">
                   <a href="https://vimeo.com/abeltrece" target="_blank" class="button" role="button">
-                    <i class="fa fa-vimeo fa-fw"></i><span class="network-name"> VIMEO</span>
+                    <i class="fa fa-vimeo fa-fw"></i><span class="network-name helvetica-light"> VIMEO </span>
                   </a>
                 </li>
               </ul>
@@ -51,89 +50,57 @@
             <div class="col">
                 <section class="td-form">
                     <div class="row td-form-wrapper">
-                      <h1 class="text-center"><em><span style="color: rgb(255, 255, 255);" font-weight: normal !important;">let&#39;s meet</span></em></h1>
-                        <div class="col-lg-11 td-glass">
-                          <%= form_with url: :contact_email, method: :post do |f| %>
-  <div class="form-group mb-3">
-    <div class="col-md-12">
-      <%= f.label :name, class: "form-label", style: "color: rgb(255, 255, 255);" %>
-      <div class="d-flex">
-        <i class="icon ion-person align-self-center"></i>
-        <%= f.text_field :name, class: "form-control d-flex", placeholder: "Abel Lopez" %>
-      </div>
-    </div>
-  </div>
+                      <div class="col-lg-11 td-glass">
+                        <h1 class="text-center"><span style="color: rgb(255, 255, 255); font-size: 20px; font-weight: normal;">let&#39;s meet</span></h1>
+                        <%= form_with url: :contact_email, method: :post do |f| %>
+                          <div class="form-group mb-3">
+                            <div class="col-md-12">
+                              <%= f.label :name, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                              <div class="d-flex">
+                                <i class="icon ion-person align-self-center"></i>
+                                <%= f.text_field :name, class: "form-control d-flex", placeholder: "Abel Lopez" %>
+                              </div>
+                            </div>
+                          </div>
 
-  <div class="form-group mb-3">
-    <div class="col-md-12">
-      <%= f.label :email, class: "form-label", style: "color: rgb(255, 255, 255);" %>
-      <div class="d-flex">
-        <i class="icon ion-ios-email align-self-center"></i>
-        <%= f.text_field :email, class: "form-control", placeholder: "abel@lopez.com", inputmode: "email" %>
-      </div>
-    </div>
-  </div>
+                          <div class="form-group mb-3">
+                            <div class="col-md-12">
+                              <%= f.label :email, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                              <div class="d-flex">
+                                <i class="icon ion-ios-email align-self-center"></i>
+                                <%= f.text_field :email, class: "form-control", placeholder: "abel@lopez.com", inputmode: "email" %>
+                              </div>
+                            </div>
+                          </div>
 
-  <div class="form-group mb-3">
-    <div class="col-md-12">
-      <%= f.label :phone, class: "form-label", style: "color: rgb(255, 255, 255);" %>
-      <div class="d-flex td-input-container">
-        <i class="icon ion-ios-telephone align-self-center"></i>
-        <%= f.text_field :phone, class: "form-control", placeholder: "123-456-7890", inputmode: "tel" %>
-      </div>
-    </div>
-  </div>
+                          <div class="form-group mb-3">
+                            <div class="col-md-12">
+                              <%= f.label :phone, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                              <div class="d-flex td-input-container">
+                                <i class="icon ion-ios-telephone align-self-center"></i>
+                                <%= f.text_field :phone, class: "form-control", placeholder: "123-456-7890", inputmode: "tel" %>
+                              </div>
+                            </div>
+                          </div>
 
-  <div class="form-group mb-3">
-    <div class="col-md-12">
-      <div class="d-flex td-input-container"></div>
-    </div>
-  </div>
+                          <div class="form-group mb-3">
+                            <div class="col-md-12">
+                              <div class="d-flex td-input-container"></div>
+                            </div>
+                          </div>
 
-  <div class="form-group mb-3">
-    <div class="col-md-12">
-      <%= f.label :message, class: "form-label", style: "color: rgb(255, 255, 255);" %>
-      <div class="d-flex td-input-container">
-        <i class="icon ion-android-create align-self-center"></i>
-        <%= f.text_area :message, class: "form-control", placeholder: "Tell us about your video vision", rows: 6, cols: 50 %>
-      </div>
-    </div>
-  </div>
+                          <div class="form-group mb-3">
+                            <div class="col-md-12">
+                              <%= f.label :message, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                              <div class="d-flex td-input-container">
+                                <i class="icon ion-android-create align-self-center"></i>
+                                <%= f.text_area :message, class: "form-control", placeholder: "Tell us about your video vision", rows: 6, cols: 50 %>
+                              </div>
+                            </div>
+                          </div>
 
-  <%= f.submit class: "btn btn-primary", value: "Submit" %>
-<% end %>
-
-                            <!-- <form class="td-form-wrapper">
-                                <h1 class="text-center"><em><span style="color: rgb(255, 255, 255);" font-weight: normal !important;">let&#39;s meet</span></em></h1>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="name">Name *</label>
-                                        <div class="d-flex"><i class="icon ion-person align-self-center"></i><input class="form-control d-flex" type="text" autocomplete="off" name="name" required placeholder="Abel Lopez" /></div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="email">Email *</label>
-                                        <div class="d-flex"><i class="icon ion-ios-email align-self-center"></i><input class="form-control" type="text" autocomplete="off" name="phone" required placeholder="abel@lopez.com" inputmode="email" /></div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255);" class="form-label" for="phone">Phone (optional)</label>
-                                        <div class="d-flex td-input-container"><i class="icon ion-ios-telephone align-self-center"></i><input class="form-control" type="text" autocomplete="off" placeholder="123-456-7890" name="phone" inputmode="tel" /></div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12">
-                                        <div class="d-flex td-input-container"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12"><label style="color: rgb(255, 255, 255)"; class="form-label" for="message">Message Details *</label>
-                                        <div class="d-flex td-input-container"><i class="icon ion-android-create align-self-center"></i><textarea class="form-control" placeholder="Tell us about your wedding vision" name="message" rows="6" cols="50"></textarea></div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="col-md-12"><button class="btn btn-dark float-end" type="submit">Send</button></div>
-                                </div>
-                            </form> -->
+                          <%= f.submit class: "submit-button", value: "SUBMIT" %>
+                        <% end %>
                         </div>
                     </div>
                 </section>
@@ -144,7 +111,7 @@
 <div class="map-clean"></div>
 <footer style="background-color: black;">
     <div style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.2);" class="container text-center">
-        <p>Copyright ©AbelTrece 2023</p>
+        <p id="footer-text">Copyright ©AbelTrece 2023</p>
     </div>
 </footer>
 <script>
