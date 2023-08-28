@@ -1,9 +1,5 @@
-class PagesController < ApplicationController
-  def home
-    @contact_submission = ContactSubmission.new
-  end
-
-  def contact_email
+class ContactSubmissionsController < ApplicationController
+  def create
     @contact_submission = ContactSubmission.new(contact_params)
     if @contact_submission.save
       ContactMailer.send_contact_email(@contact_submission).deliver_now
@@ -12,5 +8,9 @@ class PagesController < ApplicationController
     else
       render :home
     end
+  end
+
+  def contact_params
+    params.require(:contact_submission).permit(:name, :email, :phone, :message)
   end
 end
