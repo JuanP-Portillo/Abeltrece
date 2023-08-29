@@ -1,0 +1,24 @@
+.button {
+  background-color: rbga(0, 0, 0, 0) !important;
+  color: white;
+  text-decoration: none;
+}
+
+/* application.css (or application.scss) */
+.submit-button {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+}
+
+.submit-button {
+  line-height: 0.7;
+  letter-spacing: 0.6ch;
+  word-spacing: 90%;
+  font-family: "Helvetica Neue";
+  font-size: 10px;
+  margin: -5px;
+  margin-bottom: 10px;
+}
