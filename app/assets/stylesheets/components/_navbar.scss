@@ -76,6 +76,12 @@
   word-spacing: 90%;
 }
 
+.container-main {
+  line-height: 0.7;
+  letter-spacing: 0.4ch;
+  word-spacing: 90%;
+}
+
 .submit-button {
   line-height: 0.7;
   letter-spacing: 0.6ch;
@@ -101,7 +107,7 @@ h2 {
 
 #about {
   position: relative;
-  z-index: 0;
+  padding-bottom: 7%;
 }
 
 video {
@@ -109,9 +115,11 @@ video {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+  opacity: 0.3;
+  top: 0;
+
 }
 
 .overlay {
-  z-index: 2 !important;
+  position: relative;
 }
