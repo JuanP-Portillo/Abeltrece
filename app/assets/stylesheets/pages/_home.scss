@@ -15,19 +15,20 @@
 
 .container {
   line-height: 0.7;
-  letter-spacing: 0.4ch;
-  word-spacing: 90%;
+  letter-spacing: 0.2ch;
+  word-spacing: 50%;
 }
 
 .container-main {
   line-height: 0.7;
-  letter-spacing: 0.4ch;
-  word-spacing: 90%;
+  letter-spacing: 0.2ch;
+  word-spacing: 50%;
 }
 
 .bold {
   line-height: 1;
   margin-top: 1%;
+  font-size: 1.1em;
 }
 
 .title {
@@ -41,6 +42,7 @@ h2 {
 #about {
   position: relative;
   padding-bottom: 7%;
+  height: 100vh;
 }
 
 video {
@@ -57,6 +59,10 @@ video {
   position: relative;
 }
 
-.section {
-  height: 1vh;
+#contact {
+  height: 95vh;
+}
+
+.us {
+  padding-right: 5rem;
 }
