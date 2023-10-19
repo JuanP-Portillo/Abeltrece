@@ -15,8 +15,8 @@
 
 .container {
   line-height: 0.7;
-  letter-spacing: 0.4ch;
-  word-spacing: 90%;
+  letter-spacing: 0.2ch;
+  word-spacing: 50%;
 }
 
 .container-main {
@@ -31,6 +31,7 @@
 .bold {
   line-height: 1;
   margin-top: 1%;
+  font-size: 1.1em;
 }
 
 .title {
@@ -61,6 +62,10 @@ video {
   position: relative;
 }
 
-.section {
-  height: 1vh;
+#contact {
+  height: 95vh;
+}
+
+.us {
+  padding-right: 5rem;
 }
