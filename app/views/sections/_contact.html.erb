@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-lg-6 mt-3 offset-lg-1 mx-auto">
+      <p class="bold"><span style="color: rgb(255, 255, 255);"><strong>Your journey begins here</strong></span></p>
+      <ul class="list-inline banner-social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/films.abeltrece/" target="_blank" class="button" role="button">
+            <i class="fa-brands fa-instagram"></i><span class="network-name helvetica-light"> INSTAGRAM </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-inline banner-social-buttons">
+        <li class="list-inline-item">
+          <a href="https://vimeo.com/abeltrece" target="_blank" class="button" role="button">
+            <i class="fa fa-vimeo fa-fw"></i><span class="network-name helvetica-light"> VIMEO </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="us">
+        <h2><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 15px; font-weight: bold;">About US</span></h2>
+        <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">Abel Trece Films is a vibrant and dynamic independent wedding videography business located in Mexico City. With a relentless passion for our craft, we specialize in crafting exquisite cinematic wedding videos that capture the essence of love and create lasting memories.</span></p>
+        <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">At Abel Trece Films, our dedicated team of talented professionals takes great pride in their ability to weave together the most captivating moments of a couple&#39;s special day. With an artistic approach, we artfully capture the emotions, joy, and intimate details that make each wedding unique.</span></p>
+        <p><br /><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); font-size: 10px;">Recognizing that every couple has their own story, Abel Trece Films takes the time to understand our clients&#39; vision and desires. We strive to create a personalized experience, tailoring each wedding video to reflect the couple&#39;s style, personality, and individual love story. The result is a breathtakingly beautiful and emotionally captivating film that transports viewers back to the magic of the wedding day.</span></p>
+      </ul>
+    </div>
+    <div class="col">
+        <section class="td-form">
+            <div class="row td-form-wrapper">
+              <div class="col-lg-11 td-glass">
+                <h1 class="text-left title"><span style="color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;">let&#39;s meet</span></h1>
+                <%= form_for @contact_submission do |f| %>
+                  <div class="form-group mb-3">
+                    <div class="col-md-12">
+                      <%= f.label :name, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                      <div class="d-flex">
+                        <i class="icon ion-person align-self-left"></i>
+                        <%= f.text_field :name, class: "form-control d-flex", placeholder: "Abel Lopez" %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <div class="col-md-12">
+                      <%= f.label :email, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                      <div class="d-flex">
+                        <i class="icon ion-ios-email align-self-left"></i>
+                        <%= f.text_field :email, class: "form-control", placeholder: "abel@lopez.com", inputmode: "email" %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <div class="col-md-12">
+                      <%= f.label :phone, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                      <div class="d-flex td-input-container">
+                        <i class="icon ion-ios-telephone align-self-left"></i>
+                        <%= f.text_field :phone, class: "form-control", placeholder: "123-456-7890", inputmode: "tel" %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <div class="col-md-12">
+                      <div class="d-flex td-input-container"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <div class="col-md-12">
+                      <%= f.label :message, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                      <div class="d-flex td-input-container">
+                        <i class="icon ion-android-create align-self-left"></i>
+                        <%= f.text_area :message, class: "form-control", placeholder: "Tell us about your video vision", rows: 6, cols: 50 %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <%= f.submit class: "submit-button", value: "SUBMIT" %>
+                <% end %>
+                </div>
+            </div>
+        </section>
+    </div>
+  </div>
+</div>

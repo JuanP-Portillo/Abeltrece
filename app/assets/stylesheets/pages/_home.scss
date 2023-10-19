@@ -28,6 +28,44 @@
   padding: 5%;
 }
 
+.container-main p {
+  line-height: 1;
+  font-size: 50%;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container-main {
+    padding: 5%;
+  }
+
+  .container-main h3 {
+    line-height: 1;
+  }
+
+  .col-lg-8 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-lg-8 {
+    padding: 2rem 1rem;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  .container-main p {
+    line-height: 1;
+    font-size: 50%;
+  }
+}
+
 .bold {
   line-height: 1;
   margin-top: 1%;
