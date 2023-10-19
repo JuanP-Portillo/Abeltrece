@@ -3,8 +3,7 @@ class ContactMailer < ApplicationMailer
     @contact_submission = contact_submission
 
     mail(
-      to: "abeltrecetest@gmail.com", # Replace with your email address
-      from: contact_submission.email,
+      to: "alienordarenberg@gmail.com", # Replace with your email address
       subject: "New Wedding Contact Form Submission"
     )
   end

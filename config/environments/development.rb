@@ -69,13 +69,12 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :user_name => 'c835127b53ff9d',
-    :password => 'fe41ca684cb362',
-    :address => 'sandbox.smtp.mailtrap.io',
-    :host => 'sandbox.smtp.mailtrap.io',
-    :port => '2525',
-    :authentication => :cram_md5
+    address: 'smtp-mail.outlook.com',
+    port: 587,
+    domain: 'outlook.com', # If you have one, otherwise you can use 'outlook.com'
+    user_name: 'adeleweddings@outlook.com',
+    password: 'ztysvscespwichan',
+    authentication: 'login',
+    enable_starttls_auto: true
   }
-
-
 end
