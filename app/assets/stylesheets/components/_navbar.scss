@@ -7,3 +7,29 @@
 #mainNav.transparent {
   background-color: rgba(0, 0, 0, 0); /* Transparent background */
 }
+
+.navbar-brand {
+  margin-top: 0.5em !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-top: 0.5em !important;
+    margin-left: 0.5em;
+  }
+
+  .navbar-toggler {
+    margin-right: 3% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-top: 0.5em !important;
+    margin-left: 0.5em;
+  }
+
+  .navbar-toggler {
+    margin-right: 3% !important;
+  }
+}

@@ -49,6 +49,10 @@
     padding-left: 2rem;
     padding-top: 3em;
   }
+
+  .container p h2 li {
+    margin-left: 0.5em;
+  }
 }
 
 @media (max-width: 576px) {
@@ -63,6 +67,10 @@
   .container-main p {
     line-height: 1;
     font-size: 50%;
+  }
+
+  .container p h2 li {
+    margin-left: 0.5em;
   }
 }
 
@@ -106,4 +114,7 @@ video {
 
 .us {
   padding-right: 5rem;
+}
+.social {
+  margin-left: 3% !important;
 }
