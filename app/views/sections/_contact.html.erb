@@ -1,0 +1,59 @@
+
+<div class="col m-4">
+    <section class="td-form">
+        <div class="row td-form-wrapper">
+          <div class="col-lg-11 td-glass">
+            <h1 class="text-left title"><span style="color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;">let&#39;s meet</span></h1>
+            <%= form_for @contact_submission do |f| %>
+              <div class="form-group mb-3">
+                <div class="col-md-12">
+                  <%= f.label :name, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                  <div class="d-flex">
+                    <i class="icon ion-person align-self-left"></i>
+                    <%= f.text_field :name, class: "form-control d-flex", placeholder: "Abel Lopez" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="col-md-12">
+                  <%= f.label :email, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                  <div class="d-flex">
+                    <i class="icon ion-ios-email align-self-left"></i>
+                    <%= f.text_field :email, class: "form-control", placeholder: "abel@lopez.com", inputmode: "email" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="col-md-12">
+                  <%= f.label :phone, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                  <div class="d-flex td-input-container">
+                    <i class="icon ion-ios-telephone align-self-left"></i>
+                    <%= f.text_field :phone, class: "form-control", placeholder: "123-456-7890", inputmode: "tel" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="col-md-12">
+                  <div class="d-flex td-input-container"></div>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="col-md-12">
+                  <%= f.label :message, class: "form-label helvetica-light text-left", style: "color: rgb(255, 255, 255);" %>
+                  <div class="d-flex td-input-container">
+                    <i class="icon ion-android-create align-self-left"></i>
+                    <%= f.text_area :message, class: "form-control", placeholder: "Tell us about your video vision", rows: 6, cols: 50 %>
+                  </div>
+                </div>
+              </div>
+
+              <%= f.submit class: "submit-button", value: "SUBMIT" %>
+            <% end %>
+            </div>
+        </div>
+    </section>
+</div>
